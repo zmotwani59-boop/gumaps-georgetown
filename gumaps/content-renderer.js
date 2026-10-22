@@ -51,6 +51,15 @@
       '</p><p class="contact"><span class="email">' + esc(x.contact) + '</span> ' + contact +
       '</p></div></article>';
   };
+  const printableLab = (x,i) => {
+    const availability = x.status==="yes" ? "Seeking undergraduates" :
+      x.status==="no" ? "Not currently recruiting" : "Possible openings";
+    return '<article class="entry"><span class="entry-number">' + String(i+1).padStart(2,"0") +
+      '</span><div class="entry-ident"><h2>' + esc(x.name) + '</h2><div class="pi">' + esc(x.investigator) +
+      '</div><div class="topics">' + esc(x.topics) +
+      '</div><div class="availability">' + esc(x.availability || availability) +
+      '</div></div><p>' + esc(x.description) + '</p></article>';
+  };
   async function render() {
     try {
       const response = await fetch("site-content.json", { cache: "no-cache" });
@@ -77,6 +86,12 @@
         labs.innerHTML = data.labs.map(labCard).join("");
         const count = document.querySelector("#labs .section-heading small");
         if (count) count.textContent = data.labs.length + " groups registered";
+      }
+      const printEntries = document.querySelector(".page .entries");
+      if (printEntries && Array.isArray(data.labs)) {
+        printEntries.innerHTML = data.labs.map(printableLab).join("");
+        const deck = document.querySelector(".page .deck");
+        if (deck) deck.textContent = data.labs.length + " participating groups. Browse their work and find a conversation you want to have.";
       }
       document.dispatchEvent(new Event("gumaps:content-ready"));
     } catch (e) {
