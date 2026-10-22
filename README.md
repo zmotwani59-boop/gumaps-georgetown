@@ -46,6 +46,6 @@ The original repository `mcat-study-timer` and its Zahra HQ backend should not b
 
 Board photos currently accept direct publicly accessible image URLs; there is no built-in image file uploader.
 
-The Research Fair's printable guide is currently static and does not automatically regenerate from editing the directory. Recheck the printed guide before printing.
+The Research Fair's printable guide now loads edited research-group details from the same source as the public directory. Always review print layout if many new groups or longer descriptions are added, since the paper design is fixed-size.
 
 The board dashboard does not publish immediately on clicking Submit update: the board member must submit the prepared GitHub issue in the newly opened tab.
