@@ -155,8 +155,9 @@ Thank you again,
 [Your name]</pre><button type="button" class="copy" id="copy">Copy example</button><span id="copy-note" aria-live="polite"></span></div></div></section></main>
 <footer><div class="wrap foot"><span>Georgetown University Minority Association of Pre-Health Students</span><span><a href="mailto:maps@georgetown.edu">maps@georgetown.edu</a></span></div></footer>
 <script>
-const input=document.getElementById('research-search'),select=document.getElementById('research-filter'),cards=[...document.querySelectorAll('.entry')],empty=document.getElementById('none');
-function filterLabs(){const q=input.value.toLowerCase().trim(),f=select.value;let n=0;for(const c of cards){const match=(f==='all'||c.dataset.status===f)&&c.dataset.search.includes(q);c.hidden=!match;if(match)n++}empty.hidden=n!==0}
-input.addEventListener('input',filterLabs);select.addEventListener('change',filterLabs);
+const input=document.getElementById('research-search'),select=document.getElementById('research-filter'),empty=document.getElementById('none');
+function filterLabs(){const q=input.value.toLowerCase().trim(),f=select.value;let n=0;for(const c of document.querySelectorAll('.entry')){const match=(f==='all'||c.dataset.status===f)&&c.dataset.search.includes(q);c.hidden=!match;if(match)n++}empty.hidden=n!==0}
+document.addEventListener('gumaps:content-ready',filterLabs);input.addEventListener('input',filterLabs);select.addEventListener('change',filterLabs);
 document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.getElementById('email-template').textContent);document.getElementById('copy-note').textContent='Copied.'}catch{document.getElementById('copy-note').textContent='Select and copy the text above.'}});
-</script></body></html>
+</script><script src="content-renderer.js" defer></script>
+</body></html>
