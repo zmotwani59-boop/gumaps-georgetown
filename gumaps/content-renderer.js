@@ -16,7 +16,7 @@
       '>' + esc(label) + '</a>' : "";
   };
   const initials = (name) => String(name || "").split(/\s+/).slice(0,2).map(x => x[0] || "").join("").toUpperCase();
-  const statusClass = s => /open|available|spots left|seeking/i.test(s || "") ? "open" : "soon";
+  const statusClass = s => /closed|full|unavailable|not available|invites|waitlist|coming|past|cancelled|canceled|filled/i.test(s || "") ? "soon" : /open|available|spots left|seeking/i.test(s || "") ? "open" : "soon";
   const eventCard = item => '<div class="event"><div class="date">' + esc(item.date) +
     '</div><div><h3>' + esc(item.title) + '</h3><p>' + esc(item.description || item.timeLocation || "") +
     '</p>' + (item.status ? '<span class="status ' + statusClass(item.status) + '">' + esc(item.status) + '</span>' : "") +
