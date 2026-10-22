@@ -1,0 +1,156 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>GUMAPS · Website Editor</title>
+<style>
+:root{--navy:#113966;--ink:#283745;--muted:#71808d;--line:#dae0e5;--bg:#f6f7f8}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+a{color:var(--navy);text-underline-offset:3px}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:default}
+header{background:white;border-bottom:1px solid var(--line)}.top{max-width:1160px;margin:auto;padding:18px 26px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font:22px Georgia,serif;color:var(--navy);font-weight:bold}.logo span{display:block;font:11px Arial,sans-serif;letter-spacing:.13em;color:var(--muted);text-transform:uppercase}.links{display:flex;gap:20px;font-size:13px}
+main{max-width:1160px;margin:auto;padding:32px 26px 60px}.eyebrow{font-size:11px;font-weight:750;letter-spacing:.14em;text-transform:uppercase;color:#6e8090}h1{font:34px/1.18 Georgia,serif;color:var(--navy);margin:8px 0}h2{font-size:16px;color:var(--navy);margin:0}p{color:var(--muted);margin:0 0 14px}
+.intro{display:flex;justify-content:space-between;align-items:end;gap:20px}.notice{margin:25px 0 20px;padding:15px 18px;border:1px solid #d6e0eb;background:#edf2f7;border-radius:4px;font-size:13px;color:#445b70}.notice strong{color:var(--navy)}
+button.outline{background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:9px 13px}
+button.primary{background:var(--navy);color:white;border:1px solid var(--navy);border-radius:4px;padding:10px 17px;font-weight:650}
+button.danger{background:white;color:#a03431;border:1px solid #e8bfbd;border-radius:4px;padding:9px 13px}
+.tabs{display:flex;border-bottom:1px solid #cbd6df;margin:25px 0 20px;overflow-x:auto}.tabs button{border:0;border-bottom:3px solid transparent;background:transparent;color:#52677b;padding:11px 18px;white-space:nowrap;font-weight:650}.tabs button[aria-selected=true]{border-color:var(--navy);color:var(--navy)}
+.workspace{display:grid;grid-template-columns:310px minmax(0,1fr);gap:20px;align-items:start}.panel{background:white;border:1px solid var(--line);border-radius:5px;overflow:hidden}.phead{display:flex;align-items:center;justify-content:space-between;padding:15px 16px;gap:10px;border-bottom:1px solid var(--line)}.search{padding:12px 14px;border-bottom:1px solid var(--line)}
+input[type=text],input[type=search],textarea,select{display:block;border:1px solid #cbd5df;border-radius:4px;width:100%;padding:10px 11px;outline:0;background:white;color:var(--ink)}input:focus,textarea:focus,select:focus{border-color:var(--navy);box-shadow:0 0 0 2px #dbe7f4}
+.list{max-height:640px;overflow-y:auto}.record{width:100%;display:block;text-align:left;border:0;border-bottom:1px solid #edf0f2;background:white;padding:12px 16px}.record:hover{background:#f7f9fb}.record[aria-current=true]{background:#ecf3f9;border-left:3px solid var(--navy);padding-left:13px}.record strong{display:block;font-size:14px;color:#29435c}.record small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.editor{padding:23px 25px 27px}.ftop{display:flex;align-items:start;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:19px;gap:16px}.ftop p{font-size:13px;margin:5px 0 0}.tag{font-size:11px;padding:4px 7px;background:#f1f4f6;color:#687b8e;white-space:nowrap}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}.field.wide{grid-column:1/-1}label{display:block;color:#36495a;font-size:13px;font-weight:650;margin-bottom:6px}textarea{min-height:95px;resize:vertical}.hint{font-size:11px;color:var(--muted);margin-top:5px}.preview{background:#fafbfc;border:1px solid var(--line);padding:14px 16px;margin:22px 0 0}.preview strong{color:var(--navy);font-size:17px;display:block}.preview .meta{color:var(--muted);font-size:12px}.preview .description{color:#586c7d;font-size:13px;margin-top:8px}
+.actions{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:20px;padding-top:20px}.right{display:flex;gap:9px}.message{font-size:13px;min-height:20px;margin-top:18px;color:#476780}.message.error{color:#9b332d}.message.ok{color:#277251}.foot{font-size:12px;color:var(--muted);margin-top:28px}
+@media(max-width:780px){main{padding:22px 15px 40px}.top{padding:15px}.links{gap:10px}.workspace{grid-template-columns:1fr}.list{max-height:260px}.fields{grid-template-columns:1fr}.editor{padding:17px}.intro{display:block}.intro button{margin-top:12px}.tabs button{padding:11px}.links a:last-child{display:none}}
+</style></head>
+<body>
+<header><div class="top"><div class="logo">GUMAPS<span>Georgetown University · Website editor</span></div><div class="links"><a href="../index.html">Public site ↗</a><a href="https://github.com/zmotwani59-boop/gumaps-georgetown" target="_blank" rel="noopener">GitHub ↗</a></div></div></header>
+<main><div class="intro"><div><div class="eyebrow">Website management</div><h1>Keep the website current.</h1><p>Update events, service opportunities, the board, and research groups without editing code.</p></div><button class="outline" id="reload" type="button">↻ Reload latest</button></div>
+<div class="notice"><strong>Only invited GitHub collaborators can publish changes.</strong> Fill out the form and select <strong>Submit update</strong>. A prepared GitHub request opens. Sign in and click <strong>Submit new issue</strong> to publish the change automatically. No access tokens or code needed. <a href="https://github.com/zmotwani59-boop/gumaps-georgetown/issues" target="_blank" rel="noopener">Review website changes ↗</a></div>
+<nav class="tabs" aria-label="Content area"><button data-tab="events" aria-selected="true">Events</button><button data-tab="volunteer" aria-selected="false">Volunteering</button><button data-tab="board" aria-selected="false">Board</button><button data-tab="labs" aria-selected="false">Research groups</button></nav>
+<div class="workspace"><aside class="panel"><div class="phead"><h2 id="list-title">Events</h2><button class="outline" type="button" id="add">+ Add</button></div><div class="search"><input type="search" id="search" placeholder="Search items" aria-label="Search items"></div><div class="list" id="list"><p style="padding:18px">Loading content…</p></div></aside><section class="panel" aria-label="Selected item editor"><div class="editor" id="editor">Select a record to begin.</div></section></div>
+<div class="message" id="message" role="status" aria-live="polite"></div><div class="foot">Updates are reviewed by GitHub's collaborator permissions and logged in the repository. The public site changes when your website host deploys the update. No credentials are stored here.</div></main>
+<script>
+(() => {
+ "use strict";
+ const REPO="zmotwani59-boop/gumaps-georgetown", API="https://api.github.com/repos/"+REPO+"/contents/gumaps/site-content.json?ref=main", ISSUE="https://github.com/"+REPO+"/issues/new";
+ const names={events:"Events",volunteer:"Volunteer opportunities",board:"Board",labs:"Research groups"};
+ const schema={
+  events:[["date","Date",1],["title","Event name",1],["description","Details",1,1],["link","Sign-up or information link"],["linkText","Button text"]],
+  volunteer:[["date","Date",1],["title","Opportunity name",1],["category","Category"],["timeLocation","Time / location"],["status","Status (OPEN, FULL, etc.)"],["availability","Availability and instructions",0,1],["link","Registration link"],["linkText","Button text"]],
+  board:[["name","Name",1],["role","Board position",1],["description","Responsibilities",0,1],["image","Photo URL (optional)"]],
+  labs:[["name","Research group",1],["investigator","Principal investigator"],["status","Undergraduate openings",0,2],["availability","Availability"],["topics","Research topics"],["description","Research description",0,1],["contact","Contact"],["contactLink","Contact link"]]
+ };
+ const el=id=>document.getElementById(id), title=x=>x.title||x.name||"Untitled", escapeHTML=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+ const subtitle=(x,k)=>k==="events"?x.date:k==="volunteer"?x.date+" · "+(x.status||""):k==="board"?x.role:x.investigator;
+ let dataset=null,tab="events",selected=null,isNew=false,dirty=false;
+ const clone=x=>x?JSON.parse(JSON.stringify(x)):null;
+ function notify(s,type){el("message").textContent=s;el("message").className="message "+(type||"");}
+ function leave(){return !dirty||confirm("Discard your unsent changes?");}
+ function mark(){dirty=true;const label=el("draft-tag");if(label)label.textContent="Modified draft";}
+ function switchTab(next){
+  if(next===tab||!leave())return;
+  tab=next;selected=clone(dataset?.[tab]?.[0]);isNew=false;dirty=false;el("search").value="";
+  el("list-title").textContent=names[tab];
+  document.querySelectorAll(".tabs button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.tab===tab)));
+  drawList();drawForm();notify("");
+ }
+ function drawList(){
+  if(!dataset)return;const list=el("list");list.replaceChildren();
+  const q=el("search").value.toLowerCase();
+  const items=dataset[tab].filter(x=>(title(x)+" "+subtitle(x,tab)).toLowerCase().includes(q));
+  if(!items.length){list.innerHTML='<p style="padding:18px">No matching records.</p>';return;}
+  for(const item of items){
+   const b=document.createElement("button");b.className="record";b.type="button";
+   b.setAttribute("aria-current",String(!isNew&&selected?.id===item.id));
+   b.innerHTML="<strong>"+escapeHTML(title(item))+"</strong><small>"+escapeHTML(subtitle(item,tab))+"</small>";
+   b.onclick=()=>{if(!leave())return;selected=clone(item);isNew=false;dirty=false;drawList();drawForm();notify("");};
+   list.appendChild(b);
+  }
+ }
+ function newItem(){
+  const item={id:tab.slice(0,5)+"-"+Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,8)};
+  for(const [key] of schema[tab]) item[key]=key==="status"&&tab==="labs"?"possible":"";
+  return item;
+ }
+ function drawForm(){
+  const host=el("editor");host.replaceChildren();
+  if(!selected){host.textContent="Select a record, or select Add.";return;}
+  const form=document.createElement("form");form.id="entry-form";
+  const head=document.createElement("div");head.className="ftop";
+  head.innerHTML="<div><h2>"+escapeHTML(isNew?"New "+names[tab].toLowerCase():title(selected))+"</h2><p>Nothing is published until you confirm your update in GitHub.</p></div><span id='draft-tag' class='tag'>Draft</span>";
+  form.appendChild(head);
+  const fields=document.createElement("div");fields.className="fields";
+  for(const [key,caption,required,kind] of schema[tab]){
+   const wrap=document.createElement("div");wrap.className="field"+(kind===1?" wide":"");
+   const label=document.createElement("label");label.textContent=caption;label.htmlFor="f-"+key;wrap.append(label);
+   let control;
+   if(kind===1){control=document.createElement("textarea");control.rows=3;}
+   else if(kind===2){
+    control=document.createElement("select");
+    [["yes","Seeking students"],["possible","Possible openings"],["no","Not currently recruiting"]].forEach(([value,text])=>{const o=document.createElement("option");o.value=value;o.textContent=text;control.append(o);});
+   } else {control=document.createElement("input");control.type="text";}
+   control.id="f-"+key;control.name=key;control.required=!!required;control.maxLength=kind===1?2000:700;control.value=selected[key]||"";
+   if(key==="image")control.placeholder="https://example.com/photo.jpg";
+   if(key==="date")control.placeholder="NOV 4";
+   control.addEventListener("input",()=>{selected[key]=control.value;mark();showPreview();});
+   control.addEventListener("change",()=>{selected[key]=control.value;mark();showPreview();});
+   wrap.appendChild(control);
+   if(key==="image"){const help=document.createElement("div");help.className="hint";help.textContent="Use a public, direct image URL. Private Google Drive links will not display.";wrap.appendChild(help);}
+   fields.appendChild(wrap);
+  }
+  form.appendChild(fields);
+  const preview=document.createElement("div");preview.id="preview";preview.className="preview";form.appendChild(preview);
+  const actions=document.createElement("div");actions.className="actions";
+  const deleteButton=document.createElement("button");deleteButton.className="danger";deleteButton.type="button";deleteButton.textContent="Delete";deleteButton.disabled=isNew;
+  deleteButton.onclick=()=>publish("delete");
+  const right=document.createElement("div");right.className="right";
+  const reset=document.createElement("button");reset.className="outline";reset.type="button";reset.textContent="Reset";
+  reset.onclick=()=>{if(!leave())return;selected=isNew?newItem():clone(dataset[tab].find(x=>x.id===selected.id));dirty=false;drawForm();};
+  const send=document.createElement("button");send.className="primary";send.type="submit";send.textContent="Submit update ↗";
+  right.append(reset,send);actions.append(deleteButton,right);form.appendChild(actions);
+  form.onsubmit=e=>{e.preventDefault();if(form.reportValidity())publish("upsert");};
+  host.appendChild(form);showPreview();
+ }
+ function showPreview(){
+  const node=el("preview");if(!node)return;node.replaceChildren();
+  const bold=document.createElement("strong");bold.textContent=title(selected);
+  const meta=document.createElement("div");meta.className="meta";meta.textContent=subtitle(selected,tab)||"";
+  const desc=document.createElement("div");desc.className="description";desc.textContent=selected.description||selected.availability||selected.topics||"";
+  node.append(bold,meta,desc);
+ }
+ function publish(action){
+  if(!selected)return;
+  if(action==="delete"&&!confirm("Delete "+title(selected)+"? GitHub will ask you to submit this removal."))return;
+  const item=action==="delete"?{id:selected.id}:Object.fromEntries([["id",selected.id],...schema[tab].map(([k])=>[k,String(selected[k]||"").trim()])]);
+  if(action==="upsert"&&!((tab==="events"||tab==="volunteer")?item.title:item.name)){notify("A title or name is required.","error");return;}
+  const payload={collection:tab,action,item};
+  const ticks=String.fromCharCode(96).repeat(3);
+  const body="<!-- GUMAPS_EDITOR_V1 -->\n"+ticks+"json\n"+JSON.stringify(payload,null,2)+"\n"+ticks+"\n\nSubmitted with the GUMAPS Website Editor; the automated publisher verifies repository collaborator status.";
+  const issueTitle="Website edit: "+action+" "+names[tab]+" — "+title(selected).slice(0,70);
+  const url=ISSUE+"?title="+encodeURIComponent(issueTitle)+"&body="+encodeURIComponent(body);
+  if(url.length>16000){notify("Description too long. Shorten it and try again.","error");return;}
+  window.open(url,"_blank","noopener,noreferrer");
+  notify("A GitHub submission page opened. Sign in and click “Submit new issue.” The update is NOT published until you submit it there.","ok");
+ }
+ async function load(){
+  notify("Loading latest website data…");
+  try{
+   let json;
+   try{
+    const r=await fetch(API+"&t="+Date.now(),{cache:"no-store",headers:{"Accept":"application/vnd.github+json"}});
+    if(!r.ok)throw Error("GitHub returned "+r.status);
+    const raw=await r.json(),bytes=Uint8Array.from(atob(raw.content.replace(/\s+/g,"")),ch=>ch.charCodeAt(0));
+    json=JSON.parse(new TextDecoder().decode(bytes));
+   }catch(err){
+    const backup=await fetch("../site-content.json",{cache:"no-store"});
+    if(!backup.ok)throw err; json=await backup.json();
+   }
+   if(json.version!==1||!Object.keys(names).every(k=>Array.isArray(json[k])))throw Error("Site content has an unexpected format");
+   dataset=json;selected=clone(json[tab][0]);isNew=false;dirty=false;drawList();drawForm();notify("Ready. You can edit a record or add a new one.");
+  }catch(err){notify("Could not load site content: "+err.message,"error");}
+ }
+ document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));
+ el("add").onclick=()=>{if(!dataset||!leave())return;isNew=true;selected=newItem();dirty=false;drawList();drawForm();notify("");};
+ el("search").oninput=drawList;
+ el("reload").onclick=()=>{if(leave())load();};
+ window.addEventListener("beforeunload",e=>{if(dirty){e.preventDefault();e.returnValue="";}});
+ load();
+})();
+</script></body></html>
