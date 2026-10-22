@@ -1,0 +1,302 @@
+{
+  "version": 1,
+  "updated": "2026-10-22",
+  "events": [
+    {
+      "id": "event-1",
+      "date": "NOV 4",
+      "title": "13th Annual Undergraduate Research Opportunities Fair",
+      "description": "2:00–5:00 PM · HFSC Social Room · Browse participating labs and student opportunities.",
+      "link": "research-fair.html",
+      "linkText": "Explore research groups"
+    }
+  ],
+  "volunteer": [
+    {
+      "id": "service-1",
+      "date": "Oct. 3",
+      "title": "Miles for Migraine — DC/VA/MD",
+      "category": "Community event volunteering",
+      "timeLocation": "8:00 AM–12:00 PM · Washington, DC area",
+      "status": "OPEN",
+      "availability": "Partner registration open No GUMAPS-specific cap confirmed.",
+      "link": "https://formhug.ai/f/e0pdjk",
+      "linkText": "Sign Up Through GUMAPS"
+    },
+    {
+      "id": "service-2",
+      "date": "Oct. 16",
+      "title": "Miriam’s Kitchen — Dinner Service",
+      "category": "Food / housing support",
+      "timeLocation": "3:00–5:30 PM · Miriam’s Kitchen",
+      "status": "INVITES SENT",
+      "availability": "Initial invites sent Check back after Oct. 9 for any reopened spots. Orientation + partner scheduling required.",
+      "link": "https://formhug.ai/f/e0pdjk",
+      "linkText": "Sign Up Through GUMAPS"
+    },
+    {
+      "id": "service-3",
+      "date": "Oct. 17",
+      "title": "Race for Every Child",
+      "category": "Post-Race Tear Down & Clean-Up",
+      "timeLocation": "10:30 AM–12:30 PM · Freedom Plaza",
+      "status": "OPEN",
+      "availability": "19+ volunteers needed Partner update received Sept. 27. Enter GUMAPS if asked for group affiliation.",
+      "link": "https://formhug.ai/f/e0pdjk",
+      "linkText": "Sign Up Through GUMAPS"
+    },
+    {
+      "id": "service-4",
+      "date": "Oct. 30",
+      "title": "Martha’s Table",
+      "category": "Food security / community service",
+      "timeLocation": "TBD · Washington, DC",
+      "status": "COMING SOON",
+      "availability": "Planning for 6–10 Specific Oct. 30 shift still being selected.",
+      "link": "https://formhug.ai/f/e0pdjk",
+      "linkText": "Join GUMAPS Group"
+    },
+    {
+      "id": "service-5",
+      "date": "Nov. 10",
+      "title": "Community of Hope — Fam-Club",
+      "category": "Family support / activities with children",
+      "timeLocation": "5:30–8:00 PM · The Aya",
+      "status": "OPEN",
+      "availability": "Up to 2 GUMAPS spots left Group capacity is 4–6; four initial volunteers have been placed.",
+      "link": "https://formhug.ai/f/e0pdjk",
+      "linkText": "Sign Up Through GUMAPS"
+    },
+    {
+      "id": "service-6",
+      "date": "Nov. 20",
+      "title": "Miriam’s Kitchen — Dinner Service",
+      "category": "Food / housing support",
+      "timeLocation": "3:00–5:30 PM · Miriam’s Kitchen",
+      "status": "FULL",
+      "availability": "Initial invites sent Check back after Nov. 13 for any reopened spots.",
+      "link": "https://formhug.ai/f/e0pdjk",
+      "linkText": "Sign Up Through GUMAPS"
+    },
+    {
+      "id": "service-7",
+      "date": "Dec. 18",
+      "title": "Miriam’s Kitchen — Dinner Service",
+      "category": "Food / housing support",
+      "timeLocation": "3:00–5:30 PM · Miriam’s Kitchen",
+      "status": "FULL",
+      "availability": "Initial invites sent Check back after Dec. 11 for any reopened spots.",
+      "link": "https://formhug.ai/f/e0pdjk",
+      "linkText": "Sign Up Through GUMAPS"
+    },
+    {
+      "id": "service-8",
+      "date": "TBD",
+      "title": "Special Olympics DC",
+      "category": "Group service opportunity",
+      "timeLocation": "TBD",
+      "status": "DATE PENDING",
+      "availability": "Planning for 5–10 Date still being established with the partner.",
+      "link": "https://formhug.ai/f/e0pdjk",
+      "linkText": "Join GUMAPS Group"
+    },
+    {
+      "id": "service-9",
+      "date": "Nov. 14",
+      "title": "SOME — Donations Project",
+      "category": "Donations support / community service",
+      "timeLocation": "TBD · SOME (So Others Might Eat)",
+      "status": "BACKUP OPTION",
+      "availability": "Up to 5 volunteers Breakfast and lunch shifts are filled; SOME offered this Donations Project as an alternative for GUMAPS.",
+      "link": "https://formhug.ai/f/e0pdjk",
+      "linkText": "Join GUMAPS Group"
+    },
+    {
+      "id": "service-10",
+      "date": "Nov. 28",
+      "title": "SOME — Breakfast Shift",
+      "category": "Food / housing support",
+      "timeLocation": "Breakfast shift · SOME (So Others Might Eat)",
+      "status": "AVAILABLE",
+      "availability": "Up to 12 volunteers Saturday breakfast opportunity offered directly to GUMAPS by SOME.",
+      "link": "https://formhug.ai/f/e0pdjk",
+      "linkText": "Join GUMAPS Group"
+    }
+  ],
+  "board": [
+    {
+      "id": "board-1",
+      "name": "Zahra Motwani",
+      "role": "President",
+      "description": "Strategy, partnerships & final approvals",
+      "image": ""
+    },
+    {
+      "id": "board-2",
+      "name": "Jordan Su",
+      "role": "Vice President",
+      "description": "Board operations & accountability",
+      "image": ""
+    },
+    {
+      "id": "board-3",
+      "name": "Alex Crespo",
+      "role": "Senior Advisor",
+      "description": "Relationships, continuity & mentorship",
+      "image": ""
+    },
+    {
+      "id": "board-4",
+      "name": "Alexa Garber",
+      "role": "Finance Chair",
+      "description": "Budget, funding & reimbursements",
+      "image": ""
+    },
+    {
+      "id": "board-5",
+      "name": "Ryan Ge",
+      "role": "Secretary",
+      "description": "Inbox, records & member communications",
+      "image": ""
+    },
+    {
+      "id": "board-6",
+      "name": "Anjali Walsh",
+      "role": "Social Media",
+      "description": "Promotion, flyers & public communications",
+      "image": ""
+    },
+    {
+      "id": "board-7",
+      "name": "Abdulbaari Abdulkadir",
+      "role": "Events 1",
+      "description": "Event administration & approvals",
+      "image": ""
+    },
+    {
+      "id": "board-8",
+      "name": "Christopher Pishvaian",
+      "role": "Events 2",
+      "description": "Event execution & logistics",
+      "image": ""
+    },
+    {
+      "id": "board-9",
+      "name": "Toluwani “Tolu” Baoku",
+      "role": "Shadowing + Community Service",
+      "description": "Service partnerships & provider pipeline",
+      "image": ""
+    },
+    {
+      "id": "board-10",
+      "name": "Raya",
+      "role": "Shadowing",
+      "description": "Provider outreach, matching & logistics",
+      "image": ""
+    },
+    {
+      "id": "board-11",
+      "name": "Ella Shi",
+      "role": "Campus Outreach 1",
+      "description": "Campus partnerships & recruitment",
+      "image": ""
+    },
+    {
+      "id": "board-12",
+      "name": "Raymond Song",
+      "role": "Campus Outreach 2",
+      "description": "Student outreach & attendance pushes",
+      "image": ""
+    }
+  ],
+  "labs": [
+    {
+      "id": "lab-1",
+      "name": "Nair Lab",
+      "investigator": "Dr. Sreejith Nair",
+      "status": "yes",
+      "availability": "Seeking undergraduate students",
+      "topics": "Cancer biology / Gene regulation / Genomics",
+      "description": "Studies the genetic mechanisms behind cancer development and uses molecular biology, genome editing, and genomics to investigate new cancer treatments.",
+      "contact": "sn778@georgetown.edu",
+      "contactLink": "mailto:sn778@georgetown.edu?subject=GUMAPS%20Research%20Fair%3A%20Nair%20Lab"
+    },
+    {
+      "id": "lab-2",
+      "name": "CARES Lab",
+      "investigator": "Dr. Casey Brown",
+      "status": "possible",
+      "availability": "Opportunities may be available",
+      "topics": "Clinical research / Psychology / Healthy aging",
+      "description": "Explores how people share, understand, and influence each other's emotions, and how social and emotional relationships can affect mental and physical health as we age.",
+      "contact": "Apply using the online form",
+      "contactLink": "https://docs.google.com/forms/d/e/1FAIpQLSf52Op09-vYOqCJyuFrGr8gnrzevH1yikwTC0MCgFKnQUSqRg/viewform"
+    },
+    {
+      "id": "lab-3",
+      "name": "Weiner Lab",
+      "investigator": "Dr. Louis Weiner",
+      "status": "no",
+      "availability": "Not currently recruiting",
+      "topics": "Cancer immunology / Cell therapy / Pancreatic cancer",
+      "description": "Investigates immune resistance in pancreatic cancer and explores engineered natural killer (NK) cells as potential therapies.",
+      "contact": "srn44@georgetown.edu",
+      "contactLink": "mailto:srn44@georgetown.edu?subject=GUMAPS%20Research%20Fair%3A%20Weiner%20Lab"
+    },
+    {
+      "id": "lab-4",
+      "name": "Ekong Research Group",
+      "investigator": "Dr. Udeme D. Ekong",
+      "status": "yes",
+      "availability": "Seeking undergraduate students",
+      "topics": "Pediatric immunology / Liver disease / Basic science",
+      "description": "Studies the immune processes behind autoimmune hepatitis and post-transplant liver inflammation in children to identify biomarkers and potential therapeutic targets.",
+      "contact": "Udeme.D.Ekong@gunet.georgetown.edu",
+      "contactLink": "mailto:Udeme.D.Ekong@gunet.georgetown.edu?subject=GUMAPS%20Research%20Fair%3A%20Ekong%20Research%20Group"
+    },
+    {
+      "id": "lab-5",
+      "name": "Braselmann Lab",
+      "investigator": "Dr. Esther Braselmann",
+      "status": "possible",
+      "availability": "Opportunities may be available",
+      "topics": "Biochemistry / Single-cell imaging / RNA & proteins",
+      "description": "Develops ways to observe RNA and proteins in living cells over time, helping researchers understand how biological molecules react to healthy and disease-related changes.",
+      "contact": "Esther.Braselmann@georgetown.edu",
+      "contactLink": "mailto:Esther.Braselmann@georgetown.edu?subject=GUMAPS%20Research%20Fair%3A%20Braselmann%20Lab"
+    },
+    {
+      "id": "lab-6",
+      "name": "Tercyak Lab",
+      "investigator": "Dr. Kenneth Tercyak",
+      "status": "possible",
+      "availability": "Opportunities may be available",
+      "topics": "Cancer prevention / Behavioral science / Public health",
+      "description": "Studies how individuals and families understand and respond to cancer risk, and how communication, counseling, and behavioral interventions can improve prevention.",
+      "contact": "kc1588@georgetown.edu",
+      "contactLink": "mailto:kc1588@georgetown.edu?subject=GUMAPS%20Research%20Fair%3A%20Tercyak%20Lab"
+    },
+    {
+      "id": "lab-7",
+      "name": "Lombardi Cancer Research Training",
+      "investigator": "Georgetown Lombardi Comprehensive Cancer Center",
+      "status": "yes",
+      "availability": "Seeking undergraduate students",
+      "topics": "Cancer research / Clinical research / Training",
+      "description": "Connects students with cancer research training and education through Georgetown Lombardi's work in scientific discovery, clinical research, and community partnership.",
+      "contact": "khowenst@georgetown.edu",
+      "contactLink": "mailto:khowenst@georgetown.edu?subject=GUMAPS%20Research%20Fair%3A%20Lombardi%20Cancer%20Research%20Training"
+    },
+    {
+      "id": "lab-8",
+      "name": "PAIRADIME Lab",
+      "investigator": "Dr. Keri Kirk",
+      "status": "yes",
+      "availability": "Seeking undergraduate students",
+      "topics": "Mental health / Psychology / Health equity",
+      "description": "Uses culturally informed, interdisciplinary research to understand Black adults' mental and physical wellness, including lived experiences and health practices, with the goal of reducing health disparities.",
+      "contact": "Application link will be supplied at the fair",
+      "contactLink": ""
+    }
+  ]
+}
