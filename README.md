@@ -29,7 +29,6 @@ If a submitted update does not appear, check the issue and the repository's Acti
 - `gumaps/index.html` — homepage
 - `gumaps/volunteer.html` — volunteer opportunities page
 - `gumaps/research-fair.html` — Undergraduate Research Opportunities Fair directory (November 4, 2026)
-- `gumaps/research-fair-print.html` — existing static printable fair guide
 - `gumaps/research-qr.svg` — fair QR graphic
 - `gumaps/site-content.json` — structured public content edited through the dashboard
 - `gumaps/content-renderer.js` — renders the structured content on public pages
@@ -46,6 +45,6 @@ The original repository `mcat-study-timer` and its Zahra HQ backend should not b
 
 Board photos currently accept direct publicly accessible image URLs; there is no built-in image file uploader.
 
-The Research Fair's printable guide now loads edited research-group details from the same source as the public directory. Always review print layout if many new groups or longer descriptions are added, since the paper design is fixed-size.
+The printable Research Fair student handout is an organizer-only working document; do not commit the handout to this public repository or link it from the public website. The searchable lab directory remains public and may be updated from registration responses.
 
 The board dashboard does not publish immediately on clicking Submit update: the board member must submit the prepared GitHub issue in the newly opened tab.
