@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-22",
+  "updated": "2026-10-26",
   "events": [
     {
       "id": "event-1",
@@ -297,6 +297,28 @@
       "description": "Uses culturally informed, interdisciplinary research to understand Black adults' mental and physical wellness, including lived experiences and health practices, with the goal of reducing health disparities.",
       "contact": "Application link will be supplied at the fair",
       "contactLink": ""
+    },
+    {
+      "id": "lab-9",
+      "name": "Purushottam Tiwari",
+      "investigator": "Purushottam Tiwari · PI",
+      "status": "possible",
+      "availability": "Opportunities may be available",
+      "topics": "Computational biophysics / Biomolecular interactions / Drug development",
+      "description": "Uses computational methods to investigate how biomolecules interact, with potential applications to drug development.",
+      "contact": "pbt7@georgetown.edu",
+      "contactLink": "mailto:pbt7@georgetown.edu?subject=GUMAPS%20Research%20Fair%3A%20Tiwari%20Research"
+    },
+    {
+      "id": "lab-10",
+      "name": "Glasgow Lab",
+      "investigator": "Eric Glasgow",
+      "status": "yes",
+      "availability": "Seeking undergraduate students",
+      "topics": "Cancer / Toxicology / Developmental biology",
+      "description": "Studies cancer, toxicology, and brain development using zebrafish, a vertebrate model for understanding biological processes.",
+      "contact": "eg239@georgetown.edu",
+      "contactLink": "mailto:eg239@georgetown.edu?subject=GUMAPS%20Research%20Fair%3A%20Glasgow%20Lab"
     }
   ]
 }
